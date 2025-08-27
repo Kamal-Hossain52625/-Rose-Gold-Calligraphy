@@ -21,12 +21,18 @@
     />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./style.css" />
+
+    <!-- Animation CSS -->
+    <link rel="stylesheet" href="./animation.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="./responsive.css">
   </head>
+
   <body>
     <header>
       <!-- Navbar section -->
       <section class="section_nav">
-        <nav id="NAV" class="navbar navbar-expand-lg bg-dark">
+        <nav id="NAV" class="navbar p-3 navbar-expand-lg bg-dark">
           <div class="container-fluid">
             
             <div class="col-md-3 col-lg-3 col-sm-12">
@@ -49,10 +55,10 @@
             <div class="nav_search col-md-3 col-lg-3 col-sm-12">
             <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-              <button class="btn btn-outline-success" type="submit">Search</button>
+              <button class="btn btn-outline-light" type="submit">Search</button>
             </form>
             <button
-                class="navbar-toggler text-white"
+                class="navbar-toggler justify-content-end"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#navbarNavAltMarkup"
@@ -60,7 +66,7 @@
                 aria-expanded="false"
                 aria-label="Toggle navigation"
               >
-                <span class="navbar-toggler-icon "></span>
+                <span class="navbar-toggler-icon justify-content-end"></span>
               </button>
           </div>
 
@@ -75,7 +81,7 @@
         <div class="container text-light row ">
           <div class="row d-flex">
 
-            <div class="Breath-Natureal p-3 col-md-6 col-lg-6 col-sm-12">
+            <div class="Breath-Natureal p-5 col-md-6 col-lg-6 col-sm-12">
                 <div class="Breath_content ">
                   <h1 class="Breath_title pt-5">Breath Natureal</h1>
                   <p>
@@ -91,14 +97,14 @@
                     </div>
 
                     <div class="play_icon">
-                      <a href="#">
+                      <a class="hover-box" href="#">
                         <img
                           class="Polygon"
                           src="./image/Polygon 2.png"
                           alt=""
 
                         />
-                        Live Demo...
+                        <span class="Live">Live Demo...</span>
                       </a>
                     </div>
                   </div>
@@ -132,7 +138,7 @@
 
             <div class="rectangle1 col-md-6 col-lg-6 col-sm-12">
 
-              <div class="wrap mt-3">
+              <div class="wrap mt-5">
                 <div class="carousel" area-label="logo carousel">
                   <div class="track">
                         <!-- Slides (set A) -->
@@ -231,7 +237,7 @@
       </section>
 
       <!-- Our Trendy plants section -->
-      <section id="OurPlants" class="Our_Trendy_plants">
+      <section id="OurPlants" class="Our_Trendy_plants">  
         <div class="container text-light">
           <div class="title_div text-center">
             <span
@@ -242,37 +248,37 @@
           </div>
 
           <div class="rectangle2_wrapper">
-            <div class="row d-flex">
+            <div class="row d-flex Plants2">
 
               <div class="rectangle2 col-md-6 col-sm-12">
                 <div class="side_wrapper">
                   <div class="carousel">
-                    <div class="track">
+                    <div class="track Slider_container">
                       <!-- Slides (Set-A) -->
                        <figure class="slide">
-                        <img src="./image/Logo(15) 1.png" alt="side-1">
+                        <img id="Slideimg" src="./image/Logo(15) 1.png" alt="side-1">
                        </figure>
                        <figure class="slide">
-                        <img src="./image/Logo(15) 2.png" alt="slide-2">
+                        <img id="Slideimg" src="./image/Logo(15) 2.png" alt="slide-2">
                        </figure>
                        <figure class="slide">
-                        <img src="./image/Logo(15) 3.png" alt="slide-3">
+                        <img id="Slideimg" src="./image/Logo(15) 3.png" alt="slide-3">
                        </figure>
                        <figure class="slide">
-                        <img src="./image/Logo(15) 4.png" alt="slide-4">
+                        <img id="Slideimg" src="./image/Logo(15) 4.png" alt="slide-4">
                        </figure>
                        <figure class="slide">
-                        <img src="./image/Logo(15) 5.png" alt="slide-5">
+                        <img id="Slideimg" src="./image/Logo(15) 5.png" alt="slide-5">
                        </figure>
                        <figure class="slide">
-                        <img src="./image/Logo(15) 6.png" alt="slide-6">
+                        <img id="Slideimg" src="./image/Logo(15) 6.png" alt="slide-6">
                        </figure>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class="rectangle2 col-md-6 col-sm-12">
+              <div class="rectangle2 col-md-6 col-sm-12 mt-4">
                 <div class="rectangle2_desc">
                   <h3 class="rectangle_title">For Small Decs Ai Plat</h3>
                   <p>
@@ -294,10 +300,10 @@
             </div>
           </div>
 
-          <div class="rectangle2_wrapper">
-            <div class="row d-flex p-3">
+          <div class="rectangle2_wrapper mt-5" >
+            <div class="row d-flex " id="our_trendy_plants2">
 
-              <div class="rectangle2 col-md-6 col-lg-6 col-sm-12">
+              <div class="rectangle2 p-3 col-md-6 col-lg-6 col-sm-12">
                 <div class="rectangle2_desc">
                   <h3 class="rectangle_title">For Small Decs Ai Plat</h3>
                   <p>
@@ -317,9 +323,9 @@
                 </div>
               </div>
 
-              <div class="rectangle2 col-md-6 col-lg-6 col-sm-12">
-                <div class="our_plants_img2">
-                  <img class="monogram_tree" src="./image/Logo(20) 2.png" alt="">
+              <div class="rectangle2 col-md-6 col-lg-6 col-sm-12 py-0">
+                <div class="our_plants_img2 ">
+                  <img class="monogram_tree  " src="./image/Logo(20) 2.png" alt="" width="300">
                 </div>
               </div>
             </div>
@@ -328,7 +334,7 @@
       </section>
     </header>
 
-    <main>
+    <main class="pb-5">
       <!-- Our Top Selling section -->
       <section id="OurSelling" class="Our_Top_Selling pt-5">
         <div class="container text-light">
@@ -337,18 +343,19 @@
               ><h2 class="section_title text-center">Our Top Selling</h2></span
             >
           </div>
-
+          
           <div class="Selling_wrapper">
-            <div class="row gap-3 Selling_wrapper">
-              <div class="Selling_container col-lg-3 col-md-4 col-sm-12">
+            <div class="row gap-3 Selling_wrapper">              
+
+              <div class="Selling_container animation col-lg-3 col-md-4 col-sm-12 mt-5">
                 <div class="Selling_img">
-                  <img src="./image/Logo(15) 1.png" alt="" width="100%" />
+                  <img class="" src="./image/Logo(15) 1.png" alt="" width="250" />
                 </div>
                 <div class="Selling_desc">
                   <h3 class="Selling_title">Calathea plant</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
 
-                  <div class="btn_package d-flex gap-3 selling_btn">
+                  <div class="btn_package d-flex gap-0 selling_btn">
                     <div class="simple_btn">
                       <h3 class="Rs">Rs. 359/-</h3>
                     </div>
@@ -358,15 +365,15 @@
                   </div>
                 </div>
               </div>
-              <div class="Selling_container col-lg-3 col-md-4 col-sm-12">
+              <div class="Selling_container animation col-lg-3 col-md-4 col-sm-12 mt-5">
                 <div class="Selling_img">
-                  <img src="./image/Logo(15) 2.png" alt="" width="100%" />
+                  <img class="" src="./image/Logo(15) 2.png" alt="" width="250" />
                 </div>
                 <div class="Selling_desc">
                   <h3 class="Selling_title">Calathea plant</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
 
-                  <div class="btn_package d-flex gap-3 selling_btn">
+                  <div class="btn_package d-flex gap-0 selling_btn">
                     <div class="simple_btn">
                       <h3 class="Rs">Rs. 359/-</h3>
                     </div>
@@ -376,15 +383,15 @@
                   </div>
                 </div>
               </div>
-              <div class="Selling_container col-lg-3 col-md-4 col-sm-12">
+              <div class="Selling_container animation col-lg-3 col-md-4 col-sm-12 mt-5">
                 <div class="Selling_img">
-                  <img src="./image/Logo(15) 3.png" alt="" width="100%" />
+                  <img class="" src="./image/Logo(15) 3.png" alt="" width="250" />
                 </div>
                 <div class="Selling_desc">
                   <h3 class="Selling_title">Calathea plant</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
 
-                  <div class="btn_package d-flex gap-3 selling_btn">
+                  <div class="btn_package d-flex gap-0 selling_btn">
                     <div class="simple_btn">
                       <h3 class="Rs">Rs. 359/-</h3>
                     </div>
@@ -394,15 +401,15 @@
                   </div>
                 </div>
               </div>
-              <div class="Selling_container col-lg-3 col-md-4 col-sm-12">
+              <div class="Selling_container animation col-lg-3 col-md-4 col-sm-12 mt-5">
                 <div class="Selling_img">
-                  <img src="./image/Logo(15) 4.png" alt="" width="100%" />
+                  <img class="" src="./image/Logo(15) 4.png" alt="" width="250" />
                 </div>
                 <div class="Selling_desc">
                   <h3 class="Selling_title">Calathea plant</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
 
-                  <div class="btn_package d-flex gap-3 selling_btn">
+                  <div class="btn_package d-flex gap-0 selling_btn">
                     <div class="simple_btn">
                       <h3 class="Rs">Rs. 359/-</h3>
                     </div>
@@ -412,15 +419,15 @@
                   </div>
                 </div>
               </div>
-              <div class="Selling_container col-lg-3 col-md-4 col-sm-12">
+              <div class="Selling_container animation col-lg-3 col-md-4 col-sm-12 mt-5">
                 <div class="Selling_img">
-                  <img src="./image/Logo(15) 5.png" alt="" width="100%" />
+                  <img class="" src="./image/Logo(15) 5.png" alt="" width="250" />
                 </div>
                 <div class="Selling_desc">
                   <h3 class="Selling_title">Calathea plant</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
 
-                  <div class="btn_package d-flex gap-3 selling_btn">
+                  <div class="btn_package d-flex gap-0 selling_btn">
                     <div class="simple_btn">
                       <h3 class="Rs">Rs. 359/-</h3>
                     </div>
@@ -430,15 +437,15 @@
                   </div>
                 </div>
               </div>
-              <div class="Selling_container col-lg-3 col-md-4 col-sm-12">
+              <div class="Selling_container animation col-lg-3 col-md-4 col-sm-12 mt-5">
                 <div class="Selling_img">
-                  <img src="./image/Logo(15) 6.png" alt="" width="100%" />
+                  <img class="" src="./image/Logo(15) 6.png" alt="" width="250" />
                 </div>
                 <div class="Selling_desc">
                   <h3 class="Selling_title">Calathea plant</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
 
-                  <div class="btn_package d-flex gap-3 selling_btn">
+                  <div class="btn_package d-flex gap-0 selling_btn">
                     <div class="simple_btn">
                       <h3 class="Rs">Rs. 359/-</h3>
                     </div>
@@ -448,6 +455,7 @@
                   </div>
                 </div>
               </div>
+  
             </div>
           </div>
         </div>
@@ -465,7 +473,7 @@
           <div class="Customer">
             <div class="row gap-3 Customer_wrapper">
 
-              <div class="Selling_container col-lg-3 col-md-4 col-sm-12 ">
+              <div class="Selling_container animation col-lg-3 col-md-4 col-sm-12 ">
                 <div class="">
                   <div class="d-flex align-items-center gap-2 py-3">
                     <img
@@ -492,7 +500,7 @@
                   </p>
                 </div>
               </div>
-              <div class="Selling_container col-lg-3 col-md-4 col-sm-12">
+              <div class="Selling_container animation col-lg-3 col-md-4 col-sm-12">
                 <div class="">
                   <div class="d-flex align-items-center gap-2 py-3">
                     <img
@@ -519,7 +527,7 @@
                   </p>
                 </div>
               </div>
-              <div class="Selling_container col-lg-3 col-md-4 col-sm-12">
+              <div class="Selling_container animation col-lg-3 col-md-4 col-sm-12">
                 <div class="">
                   <div class="d-flex align-items-center gap-2 py-3">
                     <img
@@ -554,13 +562,13 @@
       </section>
 
       <!-- Our Best 2 section -->
-      <section class="Our_Best2">
+      <section class="Our_Best2 ">
         <div class="container text-light pt-5">
           <div class="title_div text-center">
             <span><h2 class="section_title text-center">Our Best o2</h2></span>
           </div>
 
-          <div class="Best2_wrapper p-5">
+          <div class="Best2_wrapper p-5 ">
             <div class="row d-flex">
               <div class="Best2 col-md-6 col-sm-12">
                 <!-- Carousel Wrapper -->
@@ -598,7 +606,7 @@
         </div>
               </div>
 
-              <div class="rectangle2 col-md-6 col-sm-12">
+              <div class="rectangle2 col-md-6 col-sm-12 mt-5">
                 <div class="rectangle2_desc">
                   <h3 class="rectangle_title">For Small Decs Ai Plat</h3>
                   <p>
